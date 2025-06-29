@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 48th Birthday, Oremeyi!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right top, #6a0578, #8d3a8d, #aa6bb5, #c79bdd, #e4cbf8);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly transparent white */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffeb3b; /* Yellow */
+            opacity: 0;
+            animation: confetti-fall linear infinite;
+        }
+        .confetti:nth-child(2n) { background-color: #f44336; /* Red */ }
+        .confetti:nth-child(3n) { background-color: #2196f3; /* Blue */ }
+        .confetti:nth-child(4n) { background-color: #4caf50; /* Green */ }
+        .confetti:nth-child(5n) { background-color: #ff9800; /* Orange */ }
+
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(120vh) rotate(720deg); opacity: 0.8; }
+        }
+        .countdown-segment {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px 25px;
+            margin: 0 10px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            aspect-ratio: 1 / 1; /* Make images square */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <!-- Confetti elements -->
+    <div class="confetti" style="left: 10%; animation-duration: 5s;"></div>
+    <div class="confetti" style="left: 25%; animation-duration: 7s; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 40%; animation-duration: 6s; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 55%; animation-duration: 8s; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 70%; animation-duration: 5.5s; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 85%; animation-duration: 6.5s;"></div>
+    <div class="confetti" style="left: 20%; animation-duration: 7s; animation-delay: 0.3s;"></div>
+    <div class="confetti" style="left: 60%; animation-duration: 5s; animation-delay: 1.2s;"></div>
+
+
+    <div class="card p-8 md:p-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Happy Birthday!</h1>
+        <p class="text-2xl md:text-3xl font-semibold mb-6">To a wonderful person, Oremeyi!</p>
+        <p class="text-xl md:text-2xl mb-8">Celebrating <span class="font-bold text-yellow-300">48 amazing years</span> on June 30th!</p>
+
+        <div class="countdown flex justify-center items-center flex-wrap gap-4 mb-10 text-white">
+            <div class="countdown-segment flex flex-col items-center">
+                <span id="days" class="text-4xl md:text-5xl font-bold">00</span>
+                <span class="text-sm md:text-base">Days</span>
+            </div>
+            <div class="countdown-segment flex flex-col items-center">
+                <span id="hours" class="text-4xl md:text-5xl font-bold">00</span>
+                <span class="text-sm md:text-base">Hours</span>
+            </div>
+            <div class="countdown-segment flex flex-col items-center">
+                <span id="minutes" class="text-4xl md:text-5xl font-bold">00</span>
+                <span class="text-sm md:text-base">Minutes</span>
+            </div>
+            <div class="countdown-segment flex flex-col items-center">
+                <span id="seconds" class="text-4xl md:text-5xl font-bold">00</span>
+                <span class="text-sm md:text-base">Seconds</span>
+            </div>
+        </div>
+
+        <p class="text-lg md:text-xl leading-relaxed mb-8">
+            Wishing you a day filled with joy, laughter, and everything that makes you happy.
+            May this new year of your life bring even more wonderful moments and blessings!
+        </p>
+
+        <!-- Image Gallery Section -->
+        <div class="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+            <div class="flex justify-center">
+                <img src="./mommy/1.PNG" alt="Oremeyi's Photo 1" class="rounded-xl shadow-lg">
+            </div>
+            <div class="flex justify-center">
+                <img src="./mommy/2.PNG" alt="Oremeyi's Photo 2" class="rounded-xl shadow-lg">
+            </div>
+            <div class="flex justify-center">
+                <img src="./mommy/3.PNG" alt="Oremeyi's Photo 3" class="rounded-xl shadow-lg">
+            </div>
+        </div>
+        <!-- End Image Gallery Section -->
+
+        <p class="text-base md:text-lg italic mt-8">&mdash; From all of us who cherish you!</p>
+         <footer>&copy;Oremeyi@48</footer>
+    </div>
+   
+    <script>
+        // Set the birthday date to June 30th of the current year
+        const birthdayDate = new Date();
+        birthdayDate.setMonth(5); // June is month 5 (0-indexed)
+        birthdayDate.setDate(30);
+        birthdayDate.setHours(0, 0, 0, 0); // Set to midnight of the birthday
+
+        // If the current date is past June 30th of the current year,
+        // set the birthday for next year to ensure the countdown works forward.
+        const now = new Date();
+        if (now > birthdayDate) {
+            birthdayDate.setFullYear(birthdayDate.getFullYear() + 1);
+        }
+
+        // Get elements for countdown
+        const daysEl = document.getElementById('days');
+        const hoursEl = document.getElementById('hours');
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+
+        function updateCountdown() {
+            const currentTime = new Date();
+            const timeDifference = birthdayDate - currentTime; // Difference in milliseconds
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Display the countdown, adding leading zeros if necessary
+            daysEl.textContent = days < 10 ? '0' + days : days;
+            hoursEl.textContent = hours < 10 ? '0' + hours : hours;
+            minutesEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+            secondsEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+
+            // If the countdown is finished, display a happy birthday message
+            if (timeDifference < 0) {
+                clearInterval(countdownInterval); // Stop the countdown
+                document.querySelector('.countdown').innerHTML = '<p class="text-3xl font-bold text-yellow-300">It\'s Birthday Time!</p>';
+                document.querySelector('h1').textContent = "Happy 48th Birthday, Oremeyi!";
+                document.querySelector('p.text-xl').textContent = "Wishing you a truly wonderful day!";
+            }
+        }
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        // Initial call to display countdown immediately
+        updateCountdown();
+
+        // Dynamically create confetti elements for a continuous effect
+        const createConfetti = () => {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`; // Random color
+            confetti.style.animationDuration = (Math.random() * 3 + 4) + 's'; // 4-7 seconds
+            confetti.style.animationDelay = (Math.random() * 2) + 's';
+            document.body.appendChild(confetti);
+
+            confetti.addEventListener('animationend', () => {
+                confetti.remove();
+            });
+        };
+
+        // Generate new confetti every 200ms
+        setInterval(createConfetti, 200);
+
+    </script>
+
+</body>
+</html>
